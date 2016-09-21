@@ -7,8 +7,13 @@
 //
 
 #import "ViewController.h"
+#import "DrawViewController.h"
 
 @interface ViewController ()
+
+@property (weak, nonatomic) IBOutlet UIImageView *showImage;
+
+@property (nonatomic, strong) UIImage *receiveImage;
 
 @end
 
@@ -16,14 +21,38 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    _showImage.image = self.receiveImage;
+    
+    
 }
+- (IBAction)clickBtn {
+    
+    DrawViewController *drawVC = [[DrawViewController alloc]init];
+    drawVC.drawImageBlock = ^(UIImage *image){
+        
+        self.receiveImage = image;
+    };
+    drawVC.drawImageDataBlock = ^(NSData *data){
+        NSLog(@"获取到图片二进制：%@",data);
+    };
+    drawVC.drawImageDataStrBlock = ^(NSString *dataStr){
+        
+        NSLog(@"获取到图片十六进制字符串：%@",dataStr);
+        
+    };
+    [self.navigationController pushViewController:drawVC animated:YES];
+    
+    
+}
+
 
 
 @end

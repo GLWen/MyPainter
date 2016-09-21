@@ -15,6 +15,12 @@
 		7E33C3A51D9237AD006270EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E33C3A31D9237AD006270EC /* LaunchScreen.storyboard */; };
 		7E33C3B01D9237AD006270EC /* MyPainterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E33C3AF1D9237AD006270EC /* MyPainterTests.m */; };
 		7E33C3BB1D9237AD006270EC /* MyPainterUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E33C3BA1D9237AD006270EC /* MyPainterUITests.m */; };
+		7E33C3CB1D923997006270EC /* ImageHandleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E33C3CA1D923997006270EC /* ImageHandleView.m */; };
+		7E33C3CE1D923AD2006270EC /* DrawPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E33C3CD1D923AD2006270EC /* DrawPath.m */; };
+		7E33C3D11D923AF6006270EC /* DrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E33C3D01D923AF6006270EC /* DrawView.m */; };
+		7E33C3D41D923C0E006270EC /* DrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E33C3D31D923C0E006270EC /* DrawViewController.m */; };
+		7E33C3D71D923C84006270EC /* MyDrawTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E33C3D61D923C84006270EC /* MyDrawTools.m */; };
+		7E33C3DD1D9258D5006270EC /* UIImage+MyPainterExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E33C3DC1D9258D5006270EC /* UIImage+MyPainterExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,18 @@
 		7E33C3B61D9237AD006270EC /* MyPainterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyPainterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E33C3BA1D9237AD006270EC /* MyPainterUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyPainterUITests.m; sourceTree = "<group>"; };
 		7E33C3BC1D9237AD006270EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E33C3C91D923997006270EC /* ImageHandleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageHandleView.h; sourceTree = "<group>"; };
+		7E33C3CA1D923997006270EC /* ImageHandleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageHandleView.m; sourceTree = "<group>"; };
+		7E33C3CC1D923AD2006270EC /* DrawPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawPath.h; sourceTree = "<group>"; };
+		7E33C3CD1D923AD2006270EC /* DrawPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawPath.m; sourceTree = "<group>"; };
+		7E33C3CF1D923AF6006270EC /* DrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawView.h; sourceTree = "<group>"; };
+		7E33C3D01D923AF6006270EC /* DrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawView.m; sourceTree = "<group>"; };
+		7E33C3D21D923C0E006270EC /* DrawViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawViewController.h; sourceTree = "<group>"; };
+		7E33C3D31D923C0E006270EC /* DrawViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawViewController.m; sourceTree = "<group>"; };
+		7E33C3D51D923C84006270EC /* MyDrawTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyDrawTools.h; sourceTree = "<group>"; };
+		7E33C3D61D923C84006270EC /* MyDrawTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyDrawTools.m; sourceTree = "<group>"; };
+		7E33C3DB1D9258D5006270EC /* UIImage+MyPainterExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+MyPainterExtension.h"; sourceTree = "<group>"; };
+		7E33C3DC1D9258D5006270EC /* UIImage+MyPainterExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MyPainterExtension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +119,7 @@
 		7E33C3941D9237AD006270EC /* MyPainter */ = {
 			isa = PBXGroup;
 			children = (
+				7E33C3C81D92393B006270EC /* MyPainter */,
 				7E33C3981D9237AD006270EC /* AppDelegate.h */,
 				7E33C3991D9237AD006270EC /* AppDelegate.m */,
 				7E33C39B1D9237AD006270EC /* ViewController.h */,
@@ -138,6 +157,25 @@
 				7E33C3BC1D9237AD006270EC /* Info.plist */,
 			);
 			path = MyPainterUITests;
+			sourceTree = "<group>";
+		};
+		7E33C3C81D92393B006270EC /* MyPainter */ = {
+			isa = PBXGroup;
+			children = (
+				7E33C3D51D923C84006270EC /* MyDrawTools.h */,
+				7E33C3D61D923C84006270EC /* MyDrawTools.m */,
+				7E33C3DB1D9258D5006270EC /* UIImage+MyPainterExtension.h */,
+				7E33C3DC1D9258D5006270EC /* UIImage+MyPainterExtension.m */,
+				7E33C3C91D923997006270EC /* ImageHandleView.h */,
+				7E33C3CA1D923997006270EC /* ImageHandleView.m */,
+				7E33C3CC1D923AD2006270EC /* DrawPath.h */,
+				7E33C3CD1D923AD2006270EC /* DrawPath.m */,
+				7E33C3CF1D923AF6006270EC /* DrawView.h */,
+				7E33C3D01D923AF6006270EC /* DrawView.m */,
+				7E33C3D21D923C0E006270EC /* DrawViewController.h */,
+				7E33C3D31D923C0E006270EC /* DrawViewController.m */,
+			);
+			path = MyPainter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,7 +316,13 @@
 			files = (
 				7E33C39D1D9237AD006270EC /* ViewController.m in Sources */,
 				7E33C39A1D9237AD006270EC /* AppDelegate.m in Sources */,
+				7E33C3D41D923C0E006270EC /* DrawViewController.m in Sources */,
+				7E33C3DD1D9258D5006270EC /* UIImage+MyPainterExtension.m in Sources */,
+				7E33C3D11D923AF6006270EC /* DrawView.m in Sources */,
+				7E33C3CB1D923997006270EC /* ImageHandleView.m in Sources */,
+				7E33C3D71D923C84006270EC /* MyDrawTools.m in Sources */,
 				7E33C3971D9237AD006270EC /* main.m in Sources */,
+				7E33C3CE1D923AD2006270EC /* DrawPath.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
